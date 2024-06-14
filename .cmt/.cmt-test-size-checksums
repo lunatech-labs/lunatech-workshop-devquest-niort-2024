@@ -1,0 +1,434 @@
+testcode-metadata {
+    "exercise_000_initial_state"=[
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256=ad1d2d6f667e45fcd9cf6c6da65af18225dcad13d788a300c0abae028e0c41ef
+                size=245400
+            }
+        }
+    ]
+    "exercise_001_create_a_greeting_service"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256=d821e3ea12d8df1a895f7215e082cf148f4cdc9f4a48ec7c1a032d6003328991
+                size=736
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256=ad1d2d6f667e45fcd9cf6c6da65af18225dcad13d788a300c0abae028e0c41ef
+                size=245400
+            }
+        }
+    ]
+    "exercise_002_a_qute_hello_world"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        }
+    ]
+    "exercise_003_qute_products"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        }
+    ]
+    "exercise_004_even_qute_products"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        }
+    ]
+    "exercise_005_products_from_the_database"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        }
+    ]
+    "exercise_006_CDI_and_ArC"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256=b5eb7a0af92dfe73bb2ee72eaf1a85caa5e1d77be31ea79375cc72e401d03f9a
+                size=1191
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        }
+    ]
+    "exercise_007_Convert_endpoints_to_JSON"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        }
+    ]
+    "exercise_008_Adding_REST_data_Panache"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        }
+    ]
+    "exercise_009_Hook_up_the_React_app"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_010_Validation_and_PUT"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="2f8d0089ccdd6f2bb2125439135fe4e9a8da55c3bfa81aec328ff154d93fd468"
+                size=2405
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_011_Going_Reactive"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="2f8d0089ccdd6f2bb2125439135fe4e9a8da55c3bfa81aec328ff154d93fd468"
+                size=2405
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_012_Reactive_search_endpoint"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_013_Listen_and_Notify"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_014_Internal_Channels"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_015_Connecting_to_Kafka"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+    "exercise_016_Dead_Letter_Queue_and_Stream_filtering"=[
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        }
+    ]
+}
+
+
+readmefiles-metadata {
+    "exercise_000_initial_state"=[
+        {
+            "README.md" {
+                sha256="9137f6bbb4b455901a8c7f909fc1e01bd54aa8735294fcdaa25f27dc8fff0dd6"
+                size=518
+            }
+        }
+    ]
+    "exercise_001_create_a_greeting_service"=[
+        {
+            "README.md" {
+                sha256=ffe62fdb313dffc7e00d7d7fc1c2f4cd9a33104b9df36f943eb853a06964d053
+                size=428
+            }
+        }
+    ]
+    "exercise_002_a_qute_hello_world"=[
+        {
+            "README.md" {
+                sha256="52d524a39be1d43f0fc3536bd56c5d082ecc5367a0b400d20dcc0d61fb689701"
+                size=1064
+            }
+        }
+    ]
+    "exercise_003_qute_products"=[
+        {
+            "README.md" {
+                sha256=ff39bae76bf203ce2b53fec5e0c709ba6be891149ed2d3cfaf2d0322eb7183e4
+                size=1552
+            }
+        }
+    ]
+    "exercise_004_even_qute_products"=[
+        {
+            "README.md" {
+                sha256=d89d541b81f7a57e2d2629f19b211dac95352266005b0776352e42f89bc0baa1
+                size=1112
+            }
+        }
+    ]
+    "exercise_005_products_from_the_database"=[
+        {
+            "README.md" {
+                sha256="8f5d6493456a819b1c7fabd1da7d00978c0dbb4a35a29a40c9adf01868250dda"
+                size=1976
+            }
+        }
+    ]
+    "exercise_006_CDI_and_ArC"=[
+        {
+            "README.md" {
+                sha256="028856518b1c778b39c8cbbea6b351c8748cec7a2956721011bafc4c210496f1"
+                size=1722
+            }
+        }
+    ]
+    "exercise_007_Convert_endpoints_to_JSON"=[
+        {
+            "README.md" {
+                sha256="43bebacc2ce9e1b7ceff4e8321885ae879a146eaeb0d47a176393dca8a6daf1a"
+                size=1617
+            }
+        }
+    ]
+    "exercise_008_Adding_REST_data_Panache"=[
+        {
+            "README.md" {
+                sha256=bbeebe7705d55eb5e07a8f61702a1b0bd9323ecc20162a3b0b93160d1b49de56
+                size=1046
+            }
+        }
+    ]
+    "exercise_009_Hook_up_the_React_app"=[
+        {
+            "README.md" {
+                sha256=d694c15a0c81cc8e7563c16af9c1d52f8f94c609a6282c4cb7b19ad57487cee3
+                size=751
+            }
+        }
+    ]
+    "exercise_010_Validation_and_PUT"=[
+        {
+            "README.md" {
+                sha256="03ad389e5702ba1777a6148da84db5938bfd36b5fbda8b4c00ad32f38486ee82"
+                size=2415
+            }
+        }
+    ]
+    "exercise_011_Going_Reactive"=[
+        {
+            "README.md" {
+                sha256=b870e044bf26af51e2a17565f07f5d714c03389acb859bcfb99275322404cf41
+                size=1296
+            }
+        }
+    ]
+    "exercise_012_Reactive_search_endpoint"=[
+        {
+            "README.md" {
+                sha256="95d71f5f1675172736c9bcf87b8895437bd7e9923448e949957de565fb725dd7"
+                size=1261
+            }
+        }
+    ]
+    "exercise_013_Listen_and_Notify"=[
+        {
+            "README.md" {
+                sha256=d486fbdd4c171bf643a964166cdf46a84ecedec0257e2345e3abedcaf2b2c90c
+                size=2874
+            }
+        }
+    ]
+    "exercise_014_Internal_Channels"=[
+        {
+            "README.md" {
+                sha256=f6ef26201c49f642ed2f7773ea92f2195adcc2b3f158c65ac3d51c6ada9fc5a5
+                size=4176
+            }
+        }
+    ]
+    "exercise_015_Connecting_to_Kafka"=[
+        {
+            "README.md" {
+                sha256="36ba95500353bc783892586dcaa5b8f3d4a347774da017e1aae619d2008356ee"
+                size=1431
+            }
+        }
+    ]
+    "exercise_016_Dead_Letter_Queue_and_Stream_filtering"=[
+        {
+            "README.md" {
+                sha256="971f7aac0cab4c6f0660056f7b50822f485a3dd37c2b96bfe3054e2641510eb6"
+                size=1776
+            }
+        }
+    ]
+}

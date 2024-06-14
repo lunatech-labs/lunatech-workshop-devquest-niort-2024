@@ -1,0 +1,47 @@
+{
+    "active-exercise-folder" : "code",
+    "cmt-studentified-dont-touch" : [
+        "code/.idea",
+        "code/.bsp",
+        "code/.bloop",
+        "code/.vscode",
+        "code/.mvn",
+        "code/target"
+    ],
+    "code-size-and-checksums" : ".cmt/.cmt-code-size-checksums",
+    "exercises" : [
+        "exercise_000_initial_state",
+        "exercise_001_create_a_greeting_service",
+        "exercise_002_a_qute_hello_world",
+        "exercise_003_qute_products",
+        "exercise_004_even_qute_products",
+        "exercise_005_products_from_the_database",
+        "exercise_006_CDI_and_ArC",
+        "exercise_007_Convert_endpoints_to_JSON",
+        "exercise_008_Adding_REST_data_Panache",
+        "exercise_009_Hook_up_the_React_app",
+        "exercise_010_Validation_and_PUT",
+        "exercise_011_Going_Reactive",
+        "exercise_012_Reactive_search_endpoint",
+        "exercise_013_Listen_and_Notify",
+        "exercise_014_Internal_Channels",
+        "exercise_015_Connecting_to_Kafka",
+        "exercise_016_Dead_Letter_Queue_and_Stream_filtering"
+    ],
+    "generator-info" : {
+        "generator-name" : "cmta:Course Management Tools (Admin)",
+        "generator-version" : "2.0.22"
+    },
+    "read-me-files" : [
+        "README.md",
+        "EXERCISES.md"
+    ],
+    "studentified-repo-bookmark-file" : ".cmt/.bookmark",
+    "studentified-repo-solutions-folder" : ".cmt/.cue",
+    "studentified-saved-states-folder" : ".cmt/.cue/.savedStates",
+    "test-code-folders" : [
+        "src/test",
+        "src/main/resources/META-INF/resources"
+    ],
+    "test-code-size-and-checksums" : ".cmt/.cmt-test-size-checksums"
+}

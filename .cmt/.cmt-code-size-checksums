@@ -1,0 +1,2215 @@
+code-metadata {
+    "exercise_000_initial_state"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="2e668fc3b4ef5050cdf7b60e761a64349c65510030656def24e83730f4a1857a"
+                size=4326
+            }
+        },
+        {
+            "README.md" {
+                sha256="9137f6bbb4b455901a8c7f909fc1e01bd54aa8735294fcdaa25f27dc8fff0dd6"
+                size=518
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256=ad1d2d6f667e45fcd9cf6c6da65af18225dcad13d788a300c0abae028e0c41ef
+                size=245400
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256=a3f3ac2058b15e7391052cf20a0c6f4df768213cdd62dc6262b50abc07a443e5
+                size=328
+            }
+        }
+    ]
+    "exercise_001_create_a_greeting_service"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="2e668fc3b4ef5050cdf7b60e761a64349c65510030656def24e83730f4a1857a"
+                size=4326
+            }
+        },
+        {
+            "README.md" {
+                sha256=ffe62fdb313dffc7e00d7d7fc1c2f4cd9a33104b9df36f943eb853a06964d053
+                size=428
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256=ad1d2d6f667e45fcd9cf6c6da65af18225dcad13d788a300c0abae028e0c41ef
+                size=245400
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256=d821e3ea12d8df1a895f7215e082cf148f4cdc9f4a48ec7c1a032d6003328991
+                size=736
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256="206206bd17a2336e42a4b2ddfc2509ce18b4fd88a887e0122c1c68a61e0d78b3"
+                size=541
+            }
+        }
+    ]
+    "exercise_002_a_qute_hello_world"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="84e33844155b46e7bf64b06b706196ef62eca723eeb98cfb7d942dea2fd3afe7"
+                size=4331
+            }
+        },
+        {
+            "README.md" {
+                sha256="52d524a39be1d43f0fc3536bd56c5d082ecc5367a0b400d20dcc0d61fb689701"
+                size=1064
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/templates/greet.html" {
+                sha256="7b27c9a3ddd6b7ba4391c7e4e0166f44beef91539d0fe12a77417c5af2d90e49"
+                size=109
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256="38670d8fb6253b13e9d8aec9c5ae0cf862a0621f07e246c61ea9e7fd39dc707f"
+                size=693
+            }
+        }
+    ]
+    "exercise_003_qute_products"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="84e33844155b46e7bf64b06b706196ef62eca723eeb98cfb7d942dea2fd3afe7"
+                size=4331
+            }
+        },
+        {
+            "README.md" {
+                sha256=ff39bae76bf203ce2b53fec5e0c709ba6be891149ed2d3cfaf2d0322eb7183e4
+                size=1552
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/templates/details.html" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/templates/catalogue.html" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/templates/greet.html" {
+                sha256="7b27c9a3ddd6b7ba4391c7e4e0166f44beef91539d0fe12a77417c5af2d90e49"
+                size=109
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="525d07880642a7208e775f386ccd83fede982f13d90f678661d7d7a5286c80fc"
+                size=429
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Products.java" {
+                sha256="5874d3b9791c23f430457c9f60b95b35da5302424125c8eacf20dc2370a56cbe"
+                size=1201
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256="38670d8fb6253b13e9d8aec9c5ae0cf862a0621f07e246c61ea9e7fd39dc707f"
+                size=693
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=f539cddb73d2ac60b8e031663871a9b704fc7f4822470a25f25238fa478dd499
+                size=971
+            }
+        }
+    ]
+    "exercise_004_even_qute_products"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="84e33844155b46e7bf64b06b706196ef62eca723eeb98cfb7d942dea2fd3afe7"
+                size=4331
+            }
+        },
+        {
+            "README.md" {
+                sha256=d89d541b81f7a57e2d2629f19b211dac95352266005b0776352e42f89bc0baa1
+                size=1112
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+                size=0
+            }
+        },
+        {
+            "src/main/resources/templates/details.html" {
+                sha256="9116ce47d8f50b71d8f5080a63246085759268efc47f9154c8fd5ade2f6a3a4d"
+                size=331
+            }
+        },
+        {
+            "src/main/resources/templates/catalogue.html" {
+                sha256=b59ad9c859df339c4ae96c7290109858097e0cf9300956af4a1d37172d50daa2
+                size=325
+            }
+        },
+        {
+            "src/main/resources/templates/greet.html" {
+                sha256="7b27c9a3ddd6b7ba4391c7e4e0166f44beef91539d0fe12a77417c5af2d90e49"
+                size=109
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="525d07880642a7208e775f386ccd83fede982f13d90f678661d7d7a5286c80fc"
+                size=429
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Products.java" {
+                sha256="5874d3b9791c23f430457c9f60b95b35da5302424125c8eacf20dc2370a56cbe"
+                size=1201
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256="38670d8fb6253b13e9d8aec9c5ae0cf862a0621f07e246c61ea9e7fd39dc707f"
+                size=693
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=f539cddb73d2ac60b8e031663871a9b704fc7f4822470a25f25238fa478dd499
+                size=971
+            }
+        }
+    ]
+    "exercise_005_products_from_the_database"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256=d6ad12a61f36d582d5843d264f338232e1a3a67a8577a8144222b4ac7b0bef9f
+                size=4589
+            }
+        },
+        {
+            "README.md" {
+                sha256="8f5d6493456a819b1c7fabd1da7d00978c0dbb4a35a29a40c9adf01868250dda"
+                size=1976
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256="1244169d8532413b41efa88b98ba140d8a11531777ee497c91aab404cf2481bf"
+                size=744
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=d6917dd9e64b0fb16be6e157d8546af4c9b3ac80d66790051954c9c128ecb2f6
+                size=143
+            }
+        },
+        {
+            "src/main/resources/templates/layout.html" {
+                sha256="74bb6d9c0065fbd573c52ae8836a1f041377786315e3c6da6a635e3a4295115d"
+                size=116
+            }
+        },
+        {
+            "src/main/resources/templates/details.html" {
+                sha256=a8af60bbad6b8fd304722a77edb8ed1b9ced524dc7f8d4d6371114dc46275b89
+                size=272
+            }
+        },
+        {
+            "src/main/resources/templates/catalogue.html" {
+                sha256="3e38667b649e6bcf78ef05300290ff6fb575e2a3fddcf9ca6f43039014e33399"
+                size=253
+            }
+        },
+        {
+            "src/main/resources/templates/greet.html" {
+                sha256="7b27c9a3ddd6b7ba4391c7e4e0166f44beef91539d0fe12a77417c5af2d90e49"
+                size=109
+            }
+        },
+        {
+            "src/main/resources/templates/tags/productListItem.html" {
+                sha256="2ad3783fee7c8f853b44c71b03c6cf2bafe7ceec7a3a460cb5b99d44dc9bf478"
+                size=61
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256="8fe0688220b4481a6881f15c0260f5aef4d848497a62670c0542afb3856159b9"
+                size=968
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256=ed329c3bc3238cadec316d44df6ea8763f455bd3842638c5195feaa6f3939487
+                size=530
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256="38670d8fb6253b13e9d8aec9c5ae0cf862a0621f07e246c61ea9e7fd39dc707f"
+                size=693
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="8861b33ba13b9112e0a2214488caa0e0c3794439c92f790fe03fe12907f6bfa0"
+                size=974
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/extensions/BigDecimalExtension.java" {
+                sha256=f4d9001ab3e0533fff781f28b6edd40bc72bf2d25d2fb96d3037d3ad32b09fa4
+                size=399
+            }
+        }
+    ]
+    "exercise_006_CDI_and_ArC"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256=d6ad12a61f36d582d5843d264f338232e1a3a67a8577a8144222b4ac7b0bef9f
+                size=4589
+            }
+        },
+        {
+            "README.md" {
+                sha256="028856518b1c778b39c8cbbea6b351c8748cec7a2956721011bafc4c210496f1"
+                size=1722
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256="1244169d8532413b41efa88b98ba140d8a11531777ee497c91aab404cf2481bf"
+                size=744
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="672fea51b0aebe6fb2e419bee0053540ab2dc357b5fb6968f725f0710f70bcdd"
+                size=159
+            }
+        },
+        {
+            "src/main/resources/templates/layout.html" {
+                sha256="74bb6d9c0065fbd573c52ae8836a1f041377786315e3c6da6a635e3a4295115d"
+                size=116
+            }
+        },
+        {
+            "src/main/resources/templates/details.html" {
+                sha256=a8af60bbad6b8fd304722a77edb8ed1b9ced524dc7f8d4d6371114dc46275b89
+                size=272
+            }
+        },
+        {
+            "src/main/resources/templates/catalogue.html" {
+                sha256="3e38667b649e6bcf78ef05300290ff6fb575e2a3fddcf9ca6f43039014e33399"
+                size=253
+            }
+        },
+        {
+            "src/main/resources/templates/greet.html" {
+                sha256="7b27c9a3ddd6b7ba4391c7e4e0166f44beef91539d0fe12a77417c5af2d90e49"
+                size=109
+            }
+        },
+        {
+            "src/main/resources/templates/tags/productListItem.html" {
+                sha256="2ad3783fee7c8f853b44c71b03c6cf2bafe7ceec7a3a460cb5b99d44dc9bf478"
+                size=61
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceIT.java" {
+                sha256=f58b5616ce12115bb3cd9680a5ffd8bfbe30c0a2c8b9c78bc34015239c259170
+                size=234
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/GreetingResourceTest.java" {
+                sha256=b5eb7a0af92dfe73bb2ee72eaf1a85caa5e1d77be31ea79375cc72e401d03f9a
+                size=1191
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=df3f45353168426eccbf20440c7f0b067c7d07c2e3c90b9d8fba09d63864db91
+                size=942
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/SubjectBean.java" {
+                sha256="98d2fe571c6c55284584fca192c1abedb8374013eb45775c298fef0840316253"
+                size=288
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256=ed329c3bc3238cadec316d44df6ea8763f455bd3842638c5195feaa6f3939487
+                size=530
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/GreetingResource.java" {
+                sha256=f5c0f40365cc5a4debe51114d38ff43dbbaac7fcc0f9cfdd418379ec0196d4ab
+                size=1250
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="8861b33ba13b9112e0a2214488caa0e0c3794439c92f790fe03fe12907f6bfa0"
+                size=974
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/extensions/BigDecimalExtension.java" {
+                sha256=f4d9001ab3e0533fff781f28b6edd40bc72bf2d25d2fb96d3037d3ad32b09fa4
+                size=399
+            }
+        }
+    ]
+    "exercise_007_Convert_endpoints_to_JSON"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256=b365c74d7d80844b6a78d96dce927d4fb00ecc982f403f43a297583243863bc8
+                size=4719
+            }
+        },
+        {
+            "README.md" {
+                sha256="43bebacc2ce9e1b7ceff4e8321885ae879a146eaeb0d47a176393dca8a6daf1a"
+                size=1617
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256="1244169d8532413b41efa88b98ba140d8a11531777ee497c91aab404cf2481bf"
+                size=744
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=d6917dd9e64b0fb16be6e157d8546af4c9b3ac80d66790051954c9c128ecb2f6
+                size=143
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256=fb23a4bb235858d3e568ee30eef2783b3edb30ef335b4c023e4740808372a38d
+                size=795
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="22ba46a8ee7f20356f0ef0fd0287fd781db825a3517a7f8463d1b0f0fc3c5536"
+                size=617
+            }
+        }
+    ]
+    "exercise_008_Adding_REST_data_Panache"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="24983a107f520e3246a8b50a6cb9a94e1784a0b3de2ab24d44478b956868d49a"
+                size=4729
+            }
+        },
+        {
+            "README.md" {
+                sha256=bbeebe7705d55eb5e07a8f61702a1b0bd9323ecc20162a3b0b93160d1b49de56
+                size=1046
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=d6917dd9e64b0fb16be6e157d8546af4c9b3ac80d66790051954c9c128ecb2f6
+                size=143
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256=ed329c3bc3238cadec316d44df6ea8763f455bd3842638c5195feaa6f3939487
+                size=530
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PanacheProductsResource.java" {
+                sha256="39feb61d19a80ecef40516118724897f581bc2c9192f0ac1aaf5a18f289802a3"
+                size=205
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="22ba46a8ee7f20356f0ef0fd0287fd781db825a3517a7f8463d1b0f0fc3c5536"
+                size=617
+            }
+        }
+    ]
+    "exercise_009_Hook_up_the_React_app"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="24983a107f520e3246a8b50a6cb9a94e1784a0b3de2ab24d44478b956868d49a"
+                size=4729
+            }
+        },
+        {
+            "README.md" {
+                sha256=d694c15a0c81cc8e7563c16af9c1d52f8f94c609a6282c4cb7b19ad57487cee3
+                size=751
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=c7b79a40c37a90f6a36bc0112e7e0a688f60f42d8c4e5d0f0da4d4fe95974e71
+                size=285
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256=ace2ea65064245dbe67187f44b5c887937a6ae367d37dd70f99ab655a5948d27
+                size=1065
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256=ed329c3bc3238cadec316d44df6ea8763f455bd3842638c5195feaa6f3939487
+                size=530
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PanacheProductsResource.java" {
+                sha256="39feb61d19a80ecef40516118724897f581bc2c9192f0ac1aaf5a18f289802a3"
+                size=205
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="22ba46a8ee7f20356f0ef0fd0287fd781db825a3517a7f8463d1b0f0fc3c5536"
+                size=617
+            }
+        }
+    ]
+    "exercise_010_Validation_and_PUT"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="3e41f416ed985b3954a3f61f440f0c5b4f3618476566093465aa8b6c724cc2c0"
+                size=4849
+            }
+        },
+        {
+            "README.md" {
+                sha256="03ad389e5702ba1777a6148da84db5938bfd36b5fbda8b4c00ad32f38486ee82"
+                size=2415
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=b9d15461151787772b1667d2a1acf043765a8c0727328cc70d4615b5c3dd8729
+                size=284
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="2f8d0089ccdd6f2bb2125439135fe4e9a8da55c3bfa81aec328ff154d93fd468"
+                size=2405
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="47e0d3165ae3ab31f5acaad44351f9442f3e141d21619fcc9e3b387f89dcb169"
+                size=898
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=eba9ddec6151ff385655d28ca03fcc09f48032f5f887b615e0f1884524c8b544
+                size=1251
+            }
+        }
+    ]
+    "exercise_011_Going_Reactive"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="3b47a430bb12522cd9b27581412c2a86efcbb9b6d6b50c7de9d84a0865a20f86"
+                size=4857
+            }
+        },
+        {
+            "README.md" {
+                sha256=b870e044bf26af51e2a17565f07f5d714c03389acb859bcfb99275322404cf41
+                size=1296
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256=b9d15461151787772b1667d2a1acf043765a8c0727328cc70d4615b5c3dd8729
+                size=284
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="2f8d0089ccdd6f2bb2125439135fe4e9a8da55c3bfa81aec328ff154d93fd468"
+                size=2405
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="72352dda9b6f998df2f67d0a2d5e5e0a2976dbd80aa17fa753efaabacbc7c637"
+                size=902
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256="6c94d279acab749f5d1bc0cec04f6e959517a4bc3e86dc372d5104e2f63b2123"
+                size=1374
+            }
+        }
+    ]
+    "exercise_012_Reactive_search_endpoint"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="3b47a430bb12522cd9b27581412c2a86efcbb9b6d6b50c7de9d84a0865a20f86"
+                size=4857
+            }
+        },
+        {
+            "README.md" {
+                sha256="95d71f5f1675172736c9bcf87b8895437bd7e9923448e949957de565fb725dd7"
+                size=1261
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="51352555059c2916a09a7f439097e8d886e411ed441182790a912f7825acd8c7"
+                size=283
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="0517dc336c24c7b73d06e9acb6ee0ce843eb4803b9cf944bcb076fddbfbb196d"
+                size=1182
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=b904bfa93a004934ba3129a0fe09fd2fc9da826cff1016329bd5e9625269b5d9
+                size=1983
+            }
+        }
+    ]
+    "exercise_013_Listen_and_Notify"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="3b47a430bb12522cd9b27581412c2a86efcbb9b6d6b50c7de9d84a0865a20f86"
+                size=4857
+            }
+        },
+        {
+            "README.md" {
+                sha256=d486fbdd4c171bf643a964166cdf46a84ecedec0257e2345e3abedcaf2b2c90c
+                size=2874
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="51352555059c2916a09a7f439097e8d886e411ed441182790a912f7825acd8c7"
+                size=283
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="0517dc336c24c7b73d06e9acb6ee0ce843eb4803b9cf944bcb076fddbfbb196d"
+                size=1182
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=aaa48b04804baf32fa38a40b3cb8ee289449cdd639df4e252b92376f0a4cdf9f
+                size=1963
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ListenNotifyResource.java" {
+                sha256="7499c95a2af7c1c19f2a0210f373bc28e417bf62c5c6d32c842db3a19cefcee1"
+                size=1846
+            }
+        }
+    ]
+    "exercise_014_Internal_Channels"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256="68cc4a5d23546787b7884b57e1cb4f44f6d836c81cf495295499862fdd928ca5"
+                size=4977
+            }
+        },
+        {
+            "README.md" {
+                sha256=f6ef26201c49f642ed2f7773ea92f2195adcc2b3f158c65ac3d51c6ada9fc5a5
+                size=4176
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="51352555059c2916a09a7f439097e8d886e411ed441182790a912f7825acd8c7"
+                size=283
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="0517dc336c24c7b73d06e9acb6ee0ce843eb4803b9cf944bcb076fddbfbb196d"
+                size=1182
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdatesResource.java" {
+                sha256=ae9379ee0cf27d2e2afc9db4e6f6feb08e159128f065a11a4e19ba1c3d307a64
+                size=623
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdateStreams.java" {
+                sha256="66b5e1945dc3f11da1c76f8794a00d7c88d19236fcdd91477eb6ba9c38a64cf2"
+                size=1123
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=aaa48b04804baf32fa38a40b3cb8ee289449cdd639df4e252b92376f0a4cdf9f
+                size=1963
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdate.java" {
+                sha256="71ded4de85605d6ea81a203197f45fedc5e95539bb07f503a967222d363abb2d"
+                size=420
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ListenNotifyResource.java" {
+                sha256="7499c95a2af7c1c19f2a0210f373bc28e417bf62c5c6d32c842db3a19cefcee1"
+                size=1846
+            }
+        }
+    ]
+    "exercise_015_Connecting_to_Kafka"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256=b98b6e19ab25de82525a74107a26aa27735569cb000044b73c06758d68a047e4
+                size=4983
+            }
+        },
+        {
+            "README.md" {
+                sha256="36ba95500353bc783892586dcaa5b8f3d4a347774da017e1aae619d2008356ee"
+                size=1431
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="79c3c4f3735c3d2b780ac2f745e0b5efdfb7105308a376c4c484298c50c21a11"
+                size=510
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="0517dc336c24c7b73d06e9acb6ee0ce843eb4803b9cf944bcb076fddbfbb196d"
+                size=1182
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdatesResource.java" {
+                sha256="728ed8a183d5c82b130e0428b45edffe966e49750ce3e63640349ac3b961c2d7"
+                size=626
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdateStreams.java" {
+                sha256=d23e900afca86087187272cf8ae1024b76b22c1a7aca4ca75a1f60cc220cdab0
+                size=1134
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=aaa48b04804baf32fa38a40b3cb8ee289449cdd639df4e252b92376f0a4cdf9f
+                size=1963
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdate.java" {
+                sha256="71ded4de85605d6ea81a203197f45fedc5e95539bb07f503a967222d363abb2d"
+                size=420
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ListenNotifyResource.java" {
+                sha256="7499c95a2af7c1c19f2a0210f373bc28e417bf62c5c6d32c842db3a19cefcee1"
+                size=1846
+            }
+        }
+    ]
+    "exercise_016_Dead_Letter_Queue_and_Stream_filtering"=[
+        {
+            "mvnw.cmd" {
+                sha256="3f683f9aaffc06d7f70836904ffe9c438b6453bad1587e3893d5de601154be38"
+                size=7796
+            }
+        },
+        {
+            "pom.xml" {
+                sha256=b98b6e19ab25de82525a74107a26aa27735569cb000044b73c06758d68a047e4
+                size=4983
+            }
+        },
+        {
+            "README.md" {
+                sha256="971f7aac0cab4c6f0660056f7b50822f485a3dd37c2b96bfe3054e2641510eb6"
+                size=1776
+            }
+        },
+        {
+            ".dockerignore" {
+                sha256="39b0bd3b7287783b4c4a24b533ea13483f7b7c7f59d2b5d9eb7c3f0ca1786d35"
+                size=75
+            }
+        },
+        {
+            ".gitignore" {
+                sha256=b5817070717211a9f690c5e2799fcd7317563f1aac8be2e94c5e5e653246da23
+                size=334
+            }
+        },
+        {
+            mvnw {
+                sha256="94793c07cfa412621d5bca972fa04296cd46e32e0e53c7ebe7fc83bd6bbecaf7"
+                size=11289
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.properties" {
+                sha256="28a28fbfd1d5894015d80725de864bc23c86646d980ca0f195057ab50bddd602"
+                size=1018
+            }
+        },
+        {
+            ".mvn/wrapper/maven-wrapper.jar" {
+                sha256=e63a53cfb9c4d291ebe3c2b0edacb7622bbc480326beaa5a0456e412f52f066a
+                size=62547
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native" {
+                sha256=fbc771ab08982a7682eda54b1ed057d4dae3d96e85d336353a2c3490311767fb
+                size=683
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.native-micro" {
+                sha256="030f560ba15850d566cba9a41d4549db90e12bd8d9ecb5770c196a99848a65c6"
+                size=908
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.legacy-jar" {
+                sha256="967cf7d132c9d8653e1d683eb575655f71599e3f77d16d2bf64302180d58eff5"
+                size=5044
+            }
+        },
+        {
+            "src/main/docker/Dockerfile.jvm" {
+                sha256="5ed27d5db2642a944768d078ff8d564f33910495603931380f3609b554bc14da"
+                size=5235
+            }
+        },
+        {
+            "src/main/resources/import.sql" {
+                sha256=a1a9437d14007733f752bb27415059357cf0a35c68037311834891ae48df91f9
+                size=743
+            }
+        },
+        {
+            "src/main/resources/application.properties" {
+                sha256="1af1f64db4049914920ae97a4570ed0bb5119739c0dfb90a55fe58c0946b8e7f"
+                size=587
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/index.html" {
+                sha256="45fe0c2e4a4915e2e3307eda15b19068659c97ec956af69582f567984e0586e9"
+                size=552
+            }
+        },
+        {
+            "src/main/resources/META-INF/resources/bundle.min.js" {
+                sha256="40dd8da5c6372d9a3ca5bf8b40cf9ae92967b84d738c008ac01027ad29212ae8"
+                size=358588
+            }
+        },
+        {
+            "src/test/java/com/lunatech/training/quarkus/ProductsResourceTest.java" {
+                sha256="42c50c3477392a9fc9230815c31dc497a5a516d6aa87b97f0ae0c18b5f861ea2"
+                size=2694
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/Product.java" {
+                sha256="0517dc336c24c7b73d06e9acb6ee0ce843eb4803b9cf944bcb076fddbfbb196d"
+                size=1182
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlagsResource.java" {
+                sha256=e15e3058f1242b459be23af50d15bb61397c9da9d3c975e2a0c39bbddd73328c
+                size=424
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdatesResource.java" {
+                sha256="1673434aa7fd7df612cbae3c2e14a32a4ea725fb217d0894501c075b59be72a5"
+                size=951
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/FeatureFlags.java" {
+                sha256="0079a061128e7b7e26337ed5cfd2fa8f716c87163230b9ec4d3d14526255ed92"
+                size=559
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdateStreams.java" {
+                sha256="08591a9a52c6ccb3955327b7cfbf5bbd1e5821b546f4c3325f8613aa147ef2be"
+                size=1131
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ProductsResource.java" {
+                sha256=aaa48b04804baf32fa38a40b3cb8ee289449cdd639df4e252b92376f0a4cdf9f
+                size=1963
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/PriceUpdate.java" {
+                sha256="71ded4de85605d6ea81a203197f45fedc5e95539bb07f503a967222d363abb2d"
+                size=420
+            }
+        },
+        {
+            "src/main/java/com/lunatech/training/quarkus/ListenNotifyResource.java" {
+                sha256="7499c95a2af7c1c19f2a0210f373bc28e417bf62c5c6d32c842db3a19cefcee1"
+                size=1846
+            }
+        }
+    ]
+}
+
